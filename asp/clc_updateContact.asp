@@ -15,7 +15,7 @@ password = REPLACE(Request.QueryString("pw"), "'", "''")
 
 Set DataConn = Server.CreateObject("ADODB.Connection")
 
-ConnStr = "Provider=SQLOLEDB;Initial Catalog=GISOnline;Data Source=10.158.34.35;User ID=gisonline;Password=gisonline;"
+ConnStr = "Provider=SQLOLEDB;Initial Catalog=CyberReliant_Guest;Data Source=54.225.81.158;User ID=guest;"
 
 SQL = "UPDATE CIO_DIGCOM SET IMG_STRING = '" & imgstr 
 SQL = SQL + "', BIOGRAPHY = '" & bio 

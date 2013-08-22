@@ -4,7 +4,7 @@
 Dim dbConn
 
 Set dbConn = Server.CreateObject("ADODB.Connection")
-dbConn.Open "Provider=SQLOLEDB;Initial Catalog=GISOnline;Data Source=10.158.34.35;User ID=gisonline;Password=gisonline;"
+dbConn.Open "Provider=SQLOLEDB;Initial Catalog=CyberReliant_Guest;Data Source=54.225.81.158;User ID=guest;"
 
 QueryToJSON(dbConn, "SELECT * FROM CIO_DIGCOM ORDER BY NAME").Flush
 
